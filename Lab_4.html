@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="author" content="Dima Buialo">
+	<meta charset="UTF-8">
+	<title>Lab 4</title>
+	<link rel="stylesheet" href="lab_4.css">
+</head>
+<body>
+	<header>
+		<h1 class="logo">logo</h1>
+		<span></span>
+		<button type="button" class="hamburger">
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+		</button>
+	</header>
+	<div id="container">
+		<a href="https://buiama.github.io/WebLab_1/">Lab 1</a>
+		<a href="https://buiama.github.io/WebLab_2_flex/">Lab 2 flex</a>
+		<a href="https://buiama.github.io/WebLab_2_grid/">Lab 2 grid</a>
+		<a href="https://buiama.github.io/Weblab_3_mobile/">Lab 3 mobile</a>
+		<a href="">Lab 4</a>
+	</div>
+
+	<section class="sec1">
+		<img src="3d-house-with-solar-pannels.jpg">
+	</section>
+
+	<section class="sec2">
+		<div class="text">
+			<span>
+				<h2>How is solar panel work?</h2>
+				<h3>Simple Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum.</h3>
+			</span>
+		</div>
+	</section>
+	<section class="sec3">
+		<p class="cell c1">Inverter<br>inspection</p>
+		<p class="cell c2">Complete<br>Diagnostics</p>
+		<p class="cell c3">Expert Solar Panel<br>Repair</p>
+		<p class="cell c4">Updates &<br>Monitoring</p>
+	</section>
+	<footer>
+		Sample text. Click to select the Text Element.
+	</footer>
+	<script type="text/javascript">
+		const menu = document.querySelector('.hamburger');
+		const menuActive = ()=> {
+			if(menu.classList.toggle('active')) document.getElementById("container").style.display="flex";
+			else document.getElementById("container").style.display="none";
+		};
+		menu.addEventListener('click', menuActive);
+	</script>
+</body>
