@@ -287,12 +287,12 @@ h3 {
 .cell:before {
   	position: absolute;
   	height: 8.5vh;
-  	width: 222px;
+  	width: 200px;
   	top: -3.5vh;
   	left: 50%;
   	transform: translateX(-50%);
   	background: white;
-	background-size: 222px 8.5vh; /**/
+	background-size: 200px 8.5vh; /**/
 	background-repeat: no-repeat;
 }
 .c1:before {
